@@ -13,9 +13,12 @@
 int main()
 {
     std::cout << "Hello World!\n";
-    //Testing degree and radian conversions, should output 3.14... and 360
+    //Testing degree and radian conversions, should output 3.14..., 360ish and 5
     std::cout << MathUtils::toRad(180.0f);
-    std::cout << MathUtils::toDeg(6.283185307179586);
+    std::cout << "\n";
+    std::cout << MathUtils::toDeg(6.28f);
+    std::cout << "\n";
+    std::cout << MathUtils::Pythagoras(3, 4);
     //vector
     //add
     //subtract

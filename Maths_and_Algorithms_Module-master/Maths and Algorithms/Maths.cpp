@@ -1,19 +1,38 @@
 #include "Maths.h"
+#include <math.h>
 
-static float toRad(float Deg)
+float MathUtils::toRad(float Deg)
 {
 	float result = (MathUtils::pi * Deg) / 180.0f;
 	return result;
 }
 
-static float toDeg(float Rad)
+float MathUtils::toDeg(float Rad)
 {
 	float result = (180.0f * Rad) / MathUtils::pi;
 	return result;
 }
 
-static float Pythagoras(float A, float B) //a^2 + b^2 = c^2
+float MathUtils::Pythagoras(float A, float B) //a^2 + b^2 = c^2
 {
-	float result = (A * A) + (B * B);
+	float result = float(sqrt((A * A) + (B * B)));
 	return result;
+}
+
+//Sin theta = opp/hyp
+float MathUtils::FindSinTheta(float opp, float hyp)
+{
+	return (opp / hyp);
+}
+
+//Cos theta = adj/hyp
+float MathUtils::FindCosTheta(float adj, float hyp)
+{
+	return (adj/hyp);
+}
+
+//Tan theta = opp/adj
+float MathUtils::FindTanTheta(float opp, float adj)
+{
+	return(opp / adj);
 }
