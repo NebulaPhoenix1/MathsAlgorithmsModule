@@ -22,6 +22,10 @@ int main()
     //vector
     //add
     //subtract
+    //
+
+    //Stacks
+    Stack<int> newStack;
 }
 
 

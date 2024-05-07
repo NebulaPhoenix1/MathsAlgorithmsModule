@@ -1,19 +1,20 @@
 #pragma once
 #include <ctype.h>
 
-
-
 template <typename T>
 class Stack
 {
 public:
+    Stack();
     T* Data;
     size_t Size;
 
+    int freeIndex = 0; //Next index in our array where we can add data
+    int firstIndex = 0; //First index with data stored in it
+    
     T Pop();
     T Peek();
     void Push(T dataToPush);
-
 };
 
 template <typename T>
@@ -52,4 +53,6 @@ public:
     void HeapifyUp(); //bubble Up
     void HeapifyDown(); //Bubble Down;
 };
+
+
 

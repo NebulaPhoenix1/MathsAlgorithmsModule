@@ -36,3 +36,21 @@ float MathUtils::FindTanTheta(float opp, float adj)
 {
 	return(opp / adj);
 }
+
+//hyp = opp/sin(theta) OR hyp = adj/cos(theta)
+float MathUtils::FindHyp(float angle, float side)
+{
+	return 0;
+}
+
+//adj = cos(theta) x hyp OR adj = opp / tan(theta)
+float MathUtils::FindAdj(float angle, float side)
+{
+	return 0;
+}
+
+//opp = sin(theta) * hyp OR opp = tan(theta) * adj
+float MathUtils::FindOpp(float angle, float side)
+{
+	return 0;
+}
