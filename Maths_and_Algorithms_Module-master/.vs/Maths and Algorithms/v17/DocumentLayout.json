@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\",
+  "WorkspaceRootPath": "C:\\Users\\luker\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{517D3741-1248-4FA6-947E-2126550E5E11}|Maths and Algorithms\\Maths and Algorithms.vcxproj|C:\\Users\\Administrator\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\DataStructures.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{517D3741-1248-4FA6-947E-2126550E5E11}|Maths and Algorithms\\Maths and Algorithms.vcxproj|C:\\Users\\luker\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\Maths and Algorithms.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{517D3741-1248-4FA6-947E-2126550E5E11}|Maths and Algorithms\\Maths and Algorithms.vcxproj|solutionrelative:Maths and Algorithms\\Maths and Algorithms.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517D3741-1248-4FA6-947E-2126550E5E11}|Maths and Algorithms\\Maths and Algorithms.vcxproj|C:\\Users\\luker\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\DataStructures.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{517D3741-1248-4FA6-947E-2126550E5E11}|Maths and Algorithms\\Maths and Algorithms.vcxproj|solutionrelative:Maths and Algorithms\\DataStructures.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{517D3741-1248-4FA6-947E-2126550E5E11}|Maths and Algorithms\\Maths and Algorithms.vcxproj|C:\\Users\\Administrator\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\DataStructures.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{517D3741-1248-4FA6-947E-2126550E5E11}|Maths and Algorithms\\Maths and Algorithms.vcxproj|C:\\Users\\luker\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\DataStructures.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{517D3741-1248-4FA6-947E-2126550E5E11}|Maths and Algorithms\\Maths and Algorithms.vcxproj|solutionrelative:Maths and Algorithms\\DataStructures.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{517D3741-1248-4FA6-947E-2126550E5E11}|Maths and Algorithms\\Maths and Algorithms.vcxproj|C:\\Users\\Administrator\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\Maths and Algorithms.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{517D3741-1248-4FA6-947E-2126550E5E11}|Maths and Algorithms\\Maths and Algorithms.vcxproj|solutionrelative:Maths and Algorithms\\Maths and Algorithms.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Maths and Algorithms.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\Maths and Algorithms.cpp",
+              "DocumentMoniker": "C:\\Users\\luker\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\Maths and Algorithms.cpp",
               "RelativeDocumentMoniker": "Maths and Algorithms\\Maths and Algorithms.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\Maths and Algorithms.cpp",
+              "ToolTip": "C:\\Users\\luker\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\Maths and Algorithms.cpp",
               "RelativeToolTip": "Maths and Algorithms\\Maths and Algorithms.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-23T09:38:41.921Z",
               "IsPinned": true,
@@ -40,35 +40,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DataStructures.h",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\DataStructures.h",
+              "DocumentMoniker": "C:\\Users\\luker\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\DataStructures.h",
               "RelativeDocumentMoniker": "Maths and Algorithms\\DataStructures.h",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\DataStructures.h",
+              "ToolTip": "C:\\Users\\luker\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\DataStructures.h",
               "RelativeToolTip": "Maths and Algorithms\\DataStructures.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-07T09:46:56.591Z",
               "IsPinned": true,
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DataStructures.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\DataStructures.cpp",
+              "DocumentMoniker": "C:\\Users\\luker\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\DataStructures.cpp",
               "RelativeDocumentMoniker": "Maths and Algorithms\\DataStructures.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\DataStructures.cpp",
+              "ToolTip": "C:\\Users\\luker\\Documents\\GitHub\\MathsAlgorithmsModule\\Maths_and_Algorithms_Module-master\\Maths and Algorithms\\DataStructures.cpp",
               "RelativeToolTip": "Maths and Algorithms\\DataStructures.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-07T09:46:52.765Z",
+              "WhenOpened": "2024-05-14T11:55:57.556Z",
               "EditorCaption": ""
             }
           ]

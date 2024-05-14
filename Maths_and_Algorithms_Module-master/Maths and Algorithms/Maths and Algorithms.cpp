@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "Algorithms.h"
-#include "DataStructures.h"
+//#include "Algorithms.h"
+//#include "DataStructures.h"
 #include "Maths.h"
 #include "Matrix.h"
 #include "Vector.h"
@@ -25,7 +25,7 @@ int main()
     //
 
     //Stacks
-    Stack<int> newStack;
+    //Stack<int> newStack;
 }
 
 

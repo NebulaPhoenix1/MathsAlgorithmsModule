@@ -1,3 +1,2 @@
 ﻿  DataStructures.cpp
-Maths and Algorithms.obj : error LNK2019: unresolved external symbol "public: __cdecl Stack<int>::Stack<int>(void)" (??0?$Stack@H@@QEAA@XZ) referenced in function main
-C:\Users\Administrator\Documents\GitHub\MathsAlgorithmsModule\Maths_and_Algorithms_Module-master\x64\Debug\Maths and Algorithms.exe : fatal error LNK1120: 1 unresolved externals
+  Maths and Algorithms.vcxproj -> C:\Users\luker\Documents\GitHub\MathsAlgorithmsModule\Maths_and_Algorithms_Module-master\x64\Debug\Maths and Algorithms.exe
