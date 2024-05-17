@@ -11,7 +11,7 @@ template<typename T>
 T Stack<T>::Pop()
 {
 	T popValue = Data[firstIndex];
-	Data[firstIndex] = NULL;
+	Data[firstIndex] = 0;
 	firstIndex++;
 	return popValue;
 }

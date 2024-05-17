@@ -2,11 +2,8 @@
 #include <math.h>
 
 //Constructor
-Vector::Vector(float ax, float by)
-{
-	x = ax;
-	y = by;
-}
+Vector::Vector(float ax, float by) : x(ax), y(by) {}
+
 
 float Vector::Magnitude()
 {
@@ -14,15 +11,22 @@ float Vector::Magnitude()
 }
 
 //Converting vector to have a magnitude of 1 e.g 3i + 5j -> 1/3i, 1/5j; 
-void Vector::Normalise();
+void Vector::Normalise()
 {
 	//Get magnitude
-	mag = Magnitude();
+	float mag = Magnitude();
 	//Divide x and y by magnitude
-	normalisedX = x / mag;
-	normalisedY = y / mag;
+	float normalisedX = x / mag;
+	float normalisedY = y / mag;
 	//Update X and Y properties
-	x = nomralisedX;
+	x = normalisedX;
 	y = normalisedY;
 
+}
+
+//Multiply x and y by the scaler
+void Vector::Scale(float scaler)
+{
+	x *= scaler;
+	y *= scaler;
 }
