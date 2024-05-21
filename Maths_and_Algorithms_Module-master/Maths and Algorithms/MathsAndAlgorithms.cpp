@@ -1,6 +1,6 @@
 #include <iostream>
 
-//#include "Algorithms.h"
+#include "Algorithms.h"
 //#include "DataStructures.h"
 #include "Maths.h"
 #include "Matrix.h"
@@ -11,7 +11,6 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
     //Testing degree and radian conversions, should output 3.14..., 360ish and 5
     std::cout << MathUtils::toRad(180.0f);
     std::cout << "\n";
@@ -23,9 +22,15 @@ int main()
     Vector testVector(5,5);
     testVector.Normalise();
     std::cout << testVector.x << "\n";
-    std::cout << testVector.y;
+    std::cout << testVector.y << "\n";
     //Stacks
     //Stack<int> newStack;
+
+    //Testing Searching ALgorithms
+    int test[5] = {1,2,3,4,5};
+    std::cout << Algorithms::LinearSearch(test, 5, 1) << "\n";
+    std::cout << Algorithms::BinarySearch(test, 5, 1) << "\n";
+    
 }
 
 

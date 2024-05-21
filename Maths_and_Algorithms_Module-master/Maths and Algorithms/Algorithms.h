@@ -1,8 +1,10 @@
 #pragma once
 
+//Fixes MacOS by changing size_t to an int.
 #ifdef __APPLE__ 
 	#define size_t int
 #endif
+
 namespace Algorithms
 {
 	 int * BubbleSort(int* Data, size_t Size);
@@ -13,7 +15,7 @@ namespace Algorithms
 	 int * QuickSort(int* Data, size_t Size);
 	 int * BinSort(int* Data, size_t Size);
 
-     int * LinierSearch(int* Data, size_t Size, int target);
+     int * LinearSearch(int* Data, size_t Size, int target);
      int * BinarySearch(int* Data, size_t Size, int target);
 }
 
