@@ -30,3 +30,13 @@ void Vector::Scale(float scaler)
 	x *= scaler;
 	y *= scaler;
 }
+
+float Vector::Dot(Vector& B)
+{
+	//Multiply same components by same component
+	//Then add them together
+	float dotX = x * B.x;
+	float dotY = y * B.y;
+	return (dotX + dotY);
+}
+
