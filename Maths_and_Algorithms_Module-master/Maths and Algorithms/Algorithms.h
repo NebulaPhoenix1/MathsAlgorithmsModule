@@ -1,4 +1,8 @@
 #pragma once
+
+#ifdef __APPLE__ 
+	#define size_t int
+#endif
 namespace Algorithms
 {
 	 int * BubbleSort(int* Data, size_t Size);
