@@ -58,3 +58,28 @@ int* Algorithms::BinarySearch(int* Data, size_t size, int target)
     }
     return result; 
 }
+
+//This algorithm swaps pairs of values until no swaps are made and the list is sorted
+int * Algorithms::BubbleSort(int* Data, size_t size)
+{
+    int swaps = 1;
+    int temp;
+    //Keeping going through while values are still being swapped
+    //If we make no swaps, list is sorted so we can stop
+    while(swaps > 0)
+    {
+        swaps = 0;
+        for(int i = 0; i < size - 2; i++) //Size - 2 so we dont try to access a value at an index that doesnt exist
+        {
+            //If the left value is less than the next value, swap them
+            if(Data[i] > Data[i + 1])
+            {
+                temp = Data[i+1];
+                Data[i + 1] = Data[i];
+                Data[i] = temp;
+                swaps++;
+            }
+        }
+    }
+    
+}
