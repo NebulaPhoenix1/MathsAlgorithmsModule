@@ -3,7 +3,7 @@ class Vector
 {
 public:
 	//Constructor
-	Vector(float x, float y);
+	Vector(float x, float y, float z);
 
 	//Sqaure root of x^2 and y^2
 	float Magnitude();
@@ -19,6 +19,7 @@ public:
 
 	float x;
 	float y;
+	float z;
 
 };
 

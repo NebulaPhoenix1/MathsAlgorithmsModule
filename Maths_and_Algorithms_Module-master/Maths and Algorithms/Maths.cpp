@@ -40,7 +40,8 @@ float MathUtils::FindTanTheta(float opp, float adj)
 //hyp = opp/sin(theta) OR hyp = adj/cos(theta)
 float MathUtils::FindHyp(float angle, float side)
 {
-	return 0;
+	
+
 }
 
 //adj = cos(theta) x hyp OR adj = opp / tan(theta)

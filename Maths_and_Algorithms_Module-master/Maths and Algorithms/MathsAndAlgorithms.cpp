@@ -18,11 +18,7 @@ int main()
     std::cout << "\n";
     std::cout << MathUtils::Pythagoras(3, 4);
     std::cout << "\n";
-    //vector
-    Vector testVector(5,5);
-    testVector.Normalise();
-    std::cout << testVector.x << "\n";
-    std::cout << testVector.y << "\n";
+    
     //Stacks
     //Stack<int> newStack;
 
@@ -31,6 +27,15 @@ int main()
     std::cout << Algorithms::LinearSearch(test, 5, 1) << "\n";
     std::cout << Algorithms::BinarySearch(test, 5, 1) << "\n";
     
+    //vector
+    Vector testVector(1,2,3);
+    Vector testVector2(4,5,6);
+    //testVector.Normalise();
+    Vector crossed = testVector.Cross(testVector2);
+    std::cout << crossed.x << " " << crossed.y << " " << crossed.z << "\n";
+    std::cout << testVector.x << "\n";
+    std::cout << testVector.y << "\n";
+
 }
 
 
