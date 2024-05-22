@@ -16,7 +16,7 @@ void Vector::Normalise()
 {
 	//Get magnitude
 	float mag = Magnitude();
-	//Divide x and y by magnitude
+	//Divide x, y and z by magnitude
 	float normalisedX = x / mag;
 	float normalisedY = y / mag;
 	float normalisedZ = z / mag;

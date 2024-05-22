@@ -36,6 +36,50 @@ int main()
     std::cout << testVector.x << "\n";
     std::cout << testVector.y << "\n";
 
+    //Testing multiplying matrices
+    std::cout << "Testing Matrices" << "\n";
+    Matrix testMatrix;
+    testMatrix.Data[0][0] = 1;
+    testMatrix.Data[0][1] = 2;
+    testMatrix.Data[0][2] = 3;
+    testMatrix.Data[1][0] = 4;
+    testMatrix.Data[1][1] = 5;
+    testMatrix.Data[1][2] = 6;
+    testMatrix.Data[2][0] = 7;
+    testMatrix.Data[2][1] = 8;
+    testMatrix.Data[2][2] = 9;
+
+    Matrix testMatrix2;
+    testMatrix2.Data[0][0] = 9;
+    testMatrix2.Data[0][1] = 8;
+    testMatrix2.Data[0][2] = 7;
+    testMatrix2.Data[1][0] = 6;
+    testMatrix2.Data[1][1] = 5;
+    testMatrix2.Data[1][2] = 4;
+    testMatrix2.Data[2][0] = 3;
+    testMatrix2.Data[2][1] = 2;
+    testMatrix2.Data[2][2] = 1;
+
+    Matrix Result = testMatrix * testMatrix2;
+    
+    for(int i = 0; i < 3; i++)
+    {
+        for(int j = 0; j < 3; j++)
+        {
+            std::cout << Result.Data[i][j] << ",";
+        }
+    }
+    std::cout << "\n";
+    //testing multiplying vector by matrix
+    Vector testVector3(1,0,-1);
+    Vector vecRes = testMatrix * testVector3;
+    std::cout << vecRes.x;
+    std::cout << vecRes.y;
+    std::cout << vecRes.z;
+
+    
+    
+
 }
 
 
