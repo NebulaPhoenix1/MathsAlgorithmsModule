@@ -75,10 +75,12 @@ int main()
     Vector vecRes = testMatrix * testVector3;
     std::cout << vecRes.x;
     std::cout << vecRes.y;
-    std::cout << vecRes.z;
-
+    std::cout << vecRes.z << "\n";
     
-    
+    //Testing mathutils
+    std::cout<<MathUtils::FindHyp(45,4) << "\n";
+    std::cout<<MathUtils::FindAdj(45,4) << "\n";
+    std::cout<<MathUtils::FindOpp(45,4) << "\n";
 
 }
 

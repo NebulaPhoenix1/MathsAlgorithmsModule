@@ -37,21 +37,28 @@ float MathUtils::FindTanTheta(float opp, float adj)
 	return(opp / adj);
 }
 
+
+//We can use sin cos tan from maths library :D
 //hyp = opp/sin(theta) OR hyp = adj/cos(theta)
 float MathUtils::FindHyp(float angle, float side)
 {
-	
-
+	//assume we have adjacent and angle in DEGREES
+	//convert to radians
+	float newAngle = toRad(angle);
+	return (side/cos(newAngle));
 }
 
 //adj = cos(theta) x hyp OR adj = opp / tan(theta)
 float MathUtils::FindAdj(float angle, float side)
 {
-	return 0;
+	//We're gonna use cos
+	float newAngle = toRad(angle);
+	return (cos(newAngle) * side);
 }
 
 //opp = sin(theta) * hyp OR opp = tan(theta) * adj
 float MathUtils::FindOpp(float angle, float side)
 {
-	return 0;
+	float newAngle = toRad(angle);
+	return (sin(newAngle) * side);
 }

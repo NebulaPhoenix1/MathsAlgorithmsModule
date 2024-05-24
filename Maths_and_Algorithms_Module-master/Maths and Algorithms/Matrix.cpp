@@ -31,7 +31,7 @@ float Matrix::Determinate2D(float a, float b, float c, float d)
 
 void Matrix::SetRotateAroundX(float angle)
 {
-
+    
 }
 
 void Matrix::SetRotateAroundY(float angle)
