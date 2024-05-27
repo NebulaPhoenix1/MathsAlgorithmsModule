@@ -14,7 +14,7 @@ namespace Algorithms
 	 int * MergeSort(int* Data, size_t Size);
 	 int * QuickSort(int* Data, size_t Size);
 	 int * BinSort(int* Data, size_t Size);
-
+	
      int * LinearSearch(int* Data, size_t Size, int target);
      int * BinarySearch(int* Data, size_t Size, int target);
 }

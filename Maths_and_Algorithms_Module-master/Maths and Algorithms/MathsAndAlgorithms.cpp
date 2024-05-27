@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "Algorithms.h"
-//#include "DataStructures.h"
+#include "DataStructures.h"
 #include "Maths.h"
 #include "Matrix.h"
 #include "Vector.h"
@@ -81,6 +81,16 @@ int main()
     std::cout<<MathUtils::FindHyp(45,4) << "\n";
     std::cout<<MathUtils::FindAdj(45,4) << "\n";
     std::cout<<MathUtils::FindOpp(45,4) << "\n";
+
+    //Testing Sorting Algorithms
+    int sort[5] = {3,5,1,2,4};
+    int* inserted = Algorithms::InsesrtionSort(sort, 5);
+    int* bubbled = Algorithms::BubbleSort(sort, 5);
+    int* selected = Algorithms::SelectionSort(sort, 5);
+    for(int i = 0; i < 5; i++)
+    {
+        std::cout << selected[i] << " ";
+    }
 
 }
 

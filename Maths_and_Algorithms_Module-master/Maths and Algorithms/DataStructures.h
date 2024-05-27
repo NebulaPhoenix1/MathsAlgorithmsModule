@@ -21,13 +21,17 @@ template <typename T>
 class Queue
 {
 public:
-
+    Queue();
     T* Data;
     size_t Size;
 
     T Pop();
     T Peek();
     void Push(T dataToPush);
+
+    int queueHead = 0; //Where to read data from
+    int queueTail = 0; //Where to add data to
+    bool full = false;
 };
 
 

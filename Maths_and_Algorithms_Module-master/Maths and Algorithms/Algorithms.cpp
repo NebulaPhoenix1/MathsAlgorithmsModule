@@ -64,6 +64,7 @@ int * Algorithms::BubbleSort(int* Data, size_t size)
 {
     int swaps = 1;
     int temp;
+    
     //Keeping going through while values are still being swapped
     //If we make no swaps, list is sorted so we can stop
     while(swaps > 0)
@@ -81,5 +82,50 @@ int * Algorithms::BubbleSort(int* Data, size_t size)
             }
         }
     }
-    
+    return Data;
+}
+
+//Goes through array inserting values into correct place
+int * Algorithms::InsesrtionSort(int* Data, size_t size)
+{
+    //Variable for previous value in array
+    int prev;
+    //Loop through the array
+    for(int i = 0; i < size; i++)
+    {
+        int valueToSort = Data[i];
+        prev = i - 1; 
+        //While the previous value is greater than current, shift to right 
+        while(Data[prev] > valueToSort && prev >= 0)
+        {
+            Data[prev + 1] = Data[prev];
+            prev -= 1;
+        }
+        //After all values greater than valueToSort have been done, put valueToSort in correct place
+        Data[prev + 1] = valueToSort;
+    }
+    return Data;
+}
+
+//Grabs first unsorted value, the searches rest of array for next lowest value, and swaps them
+int * Algorithms::SelectionSort(int* Data, size_t size)
+{
+    int minimumIndex;
+    for(int i = 0; i < size; i++)
+    {
+        minimumIndex = i;
+        //Find the next minimum value
+        for(int j = i + 1; j < size; j++)
+        {
+            if(Data[j] < Data[minimumIndex])
+            {
+                minimumIndex = j;
+            }
+        }
+        //We found minimum value, swap with i
+        int temp = Data[i];
+        Data[i] = Data[minimumIndex];
+        Data[minimumIndex] = temp;
+    }
+    return Data;
 }
