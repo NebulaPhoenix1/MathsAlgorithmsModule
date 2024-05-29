@@ -95,6 +95,9 @@ struct Node
 
     Node* Left;
     Node* Right;
+
+    //Constructor which if left blank, sets child nodes to nullptr
+    Node(T Data, Node* Left = nullptr, Node* Right = nullptr) : Data(Data), Left(Left), Right(Right){};
 };
 
 template <typename T>
@@ -102,10 +105,12 @@ class MinimumBinaryHeap
 {
 
 public:
-    Node<T>* Root;
+    MinimumBinaryHeap(Node<T>* Root) : Root(Root){}; //Constructor
 
-    void Add(T DataToAdd);
-    T Remove();
+    Node<T>* Root; //this node should always be the smallest in the tree
+
+    void Add(T DataToAdd); //adds a value to the heap
+    T Remove(); //removes smallest value
 
     void HeapifyUp(); //bubble Up
     void HeapifyDown(); //Bubble Down;

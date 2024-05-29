@@ -132,7 +132,6 @@ int * Algorithms::SelectionSort(int* Data, size_t size)
 
 int * Algorithms::MergeSort(int* Data, size_t size)
 {
-    //Return data if array size is 1
     if(size <= 2)
     {
         //find biggest, swap them if biggest is 1st
@@ -142,14 +141,63 @@ int * Algorithms::MergeSort(int* Data, size_t size)
             int temporary = Data[0];
             Data[0] = Data[1];
             Data[1] = temporary;
+            return Data;
         }
     }
     
     int mid = size / 2;
     int left[mid];
     int right[mid];
-    //recursively call merge for left and right
-    return nullptr;
+    //Iterates thorugh half of data, adding it to our two new lists
+    for(int i = 0; i < mid; i++)
+    {
+        left[i] = Data[i];
+        right[i] = Data[mid+i];
+    }
 
-    //then merge two arrays
+    //Recursively calls merge sort on two halves, merges them together and returns
+    int* Sorted1 = MergeSort(left,mid);
+    int* Sorted2 = MergeSort(right,mid);
+    int* Merged = new int[size];
+    Merged = MergeArraysSorted(left, mid, right, mid, Merged);
+    return Merged;
+    //now merge two arrays together but sorted and return
+    
+    
+}
+
+/* Takes two arrays to merge, their sizes and a sorted array
+i = how many left array elemnts have been merged
+j = how many right array elements have been merged
+k = how many total things have been merged*/
+int * Algorithms::MergeArraysSorted(int* left, size_t leftSize, int* right, size_t rightSize, int* sorted)
+{
+    int i = 0;
+    int j = 0;
+    int k = 0;
+    while(i < leftSize && j < rightSize)
+    {
+        //If left value is less than right, merge it
+        if(left[i] < right[j])
+        {
+            sorted[k++] = left[i++];
+        }
+        //If right is less than left, add it
+        else
+        {
+            sorted[k++] = right[j++];
+        }
+    }
+    //Add any remaining values in either array 
+    while(i < leftSize)
+    {
+        sorted[k++] = left[i++];
+    }
+
+    while(j < rightSize)
+    {
+        sorted[k++] = right[j++];
+    }
+
+    return sorted;
 }

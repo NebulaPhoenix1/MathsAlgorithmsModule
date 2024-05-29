@@ -12,7 +12,7 @@ namespace Algorithms
 	 int * SelectionSort(int* Data, size_t Size);
 	 int * HeapSort(int* Data, size_t Size);
 	 int * MergeSort(int* Data, size_t Size);
-	 int * MergeSortHelper(int* Data, size_t Size);
+	 int * MergeArraysSorted(int* one, size_t leftSize,int* two, size_t rightSize, int* sorted);
 	 int * QuickSort(int* Data, size_t Size);
 	 int * BinSort(int* Data, size_t Size);
 

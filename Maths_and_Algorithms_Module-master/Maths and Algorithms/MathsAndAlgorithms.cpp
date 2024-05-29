@@ -84,26 +84,42 @@ int main()
     std::cout<<MathUtils::FindAdj(45,4) << "\n";
     std::cout<<MathUtils::FindOpp(45,4) << "\n";
 
-    //Testing Sorting Algorithms
-    int sort[5] = {3,5,1,2,4};
-    int* inserted = Algorithms::InsesrtionSort(sort, 5);
-    int* bubbled = Algorithms::BubbleSort(sort, 5);
-    int* selected = Algorithms::SelectionSort(sort, 5);
-    for(int i = 0; i < 5; i++)
-    {
-        std::cout << selected[i] << " ";
-    }
-    std::cout<<"\n";
-
     //Testing Queues/Stacks
     DataStructures::Queue<int> queue;
     queue.Push(10);
     int testing = queue.Peek();
-    std::cout<<testing;
+    //std::cout<<testing;
 
     //Testing Matrix rotate
     Vector rotateMe(1,2,3);
     Matrix rotational;
     rotateMe = rotational.RotateAroundX(rotateMe, 45.0f);
-    std::cout << rotateMe.x << " " << rotateMe.y << " " << rotateMe.z;
+    //std::cout << rotateMe.x << " " << rotateMe.y << " " << rotateMe.z;
+
+    //testing nodes
+    DataStructures::Node<int>nodeTestLeft(8); //creates node with no children (sad)
+    DataStructures::Node<int>nodeTestright(12);
+    DataStructures::Node<int>nodeTest(10, &nodeTestLeft, &nodeTestright); //creates node with 2 children nodes with values 8 and 12
+    
+    //merging two sorted arrays testing
+    int left[3] = {2,4,6};
+    int right[3] = {1,3,5};
+    int combined[6];
+    Algorithms::MergeArraysSorted(left, 3, right, 3, combined);
+    for(int i = 0; i < 6; i++)
+    {
+        std::cout << combined[i];
+    }
+
+    //Testing Sorting Algorithms
+    int sort[5] = {2,1,6,3,4};
+    //int* inserted = Algorithms::InsesrtionSort(sort, 7);
+    //int* bubbled = Algorithms::BubbleSort(sort, 7);
+    //int* selected = Algorithms::SelectionSort(sort, 7);
+    int* merged = Algorithms::MergeSort(sort, 5);
+    for(int i = 0; i < 5; i++)
+    {
+        std::cout << merged[i] << " ";
+    }
+    std::cout<<"\n";
 }
