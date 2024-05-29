@@ -110,16 +110,18 @@ int main()
     {
         std::cout << combined[i];
     }
+    std::cout << "\n";
 
     //Testing Sorting Algorithms
-    int sort[5] = {2,1,6,3,4};
+    int sort[8] = {2,1,6,3,4,5,7};
     //int* inserted = Algorithms::InsesrtionSort(sort, 7);
     //int* bubbled = Algorithms::BubbleSort(sort, 7);
     //int* selected = Algorithms::SelectionSort(sort, 7);
-    int* merged = Algorithms::MergeSort(sort, 5);
-    for(int i = 0; i < 5; i++)
+    //int* merged = Algorithms::MergeSort(sort, 5);
+    int * quick = Algorithms::QuickSort(sort, 7);
+    for(int i = 0; i < 9; i++)
     {
-        std::cout << merged[i] << " ";
+        std::cout << quick[i] << " ";
     }
     std::cout<<"\n";
 }

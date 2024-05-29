@@ -158,12 +158,10 @@ int * Algorithms::MergeSort(int* Data, size_t size)
     //Recursively calls merge sort on two halves, merges them together and returns
     int* Sorted1 = MergeSort(left,mid);
     int* Sorted2 = MergeSort(right,mid);
+    //now merge two arrays together but sorted and return
     int* Merged = new int[size];
     Merged = MergeArraysSorted(left, mid, right, mid, Merged);
     return Merged;
-    //now merge two arrays together but sorted and return
-    
-    
 }
 
 /* Takes two arrays to merge, their sizes and a sorted array
@@ -201,3 +199,52 @@ int * Algorithms::MergeArraysSorted(int* left, size_t leftSize, int* right, size
 
     return sorted;
 }
+
+//Quick sort :)
+int * Algorithms::QuickSort(int* Data, size_t size)
+{
+    int lowIndex = 0;
+    int highIndex = size - 1;
+    int pivot = Algorithms::split(Data, lowIndex, highIndex);
+
+    //keep calling quick sort until we get to sub arrays of 2 or 1
+    if (lowIndex < pivot - 1)
+        QuickSort(Data, pivot - lowIndex);
+    if (pivot < highIndex)
+        QuickSort(Data + pivot, highIndex - pivot + 1);
+
+    return Data;
+}
+
+//Greater than pivot, right. Less than pivot left.
+int Algorithms::split(int *Data, int lowIndex, int highIndex)
+{
+    int pivotIndex = ((highIndex - lowIndex) / 2) + lowIndex;
+    int pivotValue = Data[pivotIndex];
+
+    //Scan left side of array until we find a value > pivot value
+    while(Data[lowIndex] < pivotValue)
+    {
+        lowIndex++;
+    }
+    //Scan right side of array until we find a value < pivot value
+    while(Data[highIndex] > pivotValue)
+    {
+        highIndex--;
+    }
+
+    //Swap if needed
+    if(lowIndex <= highIndex)
+    {
+        int temp = Data[lowIndex];
+        Data[lowIndex] = Data[highIndex];
+        Data[highIndex] = temp;
+
+        //Go onto next pair of values:
+        lowIndex++;
+        highIndex--;
+    }
+    
+    return lowIndex;
+}
+
