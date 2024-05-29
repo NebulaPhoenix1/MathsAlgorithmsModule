@@ -1,13 +1,12 @@
 #include <iostream>
+#include <math.h>
+#include <algorithm>
 
 #include "Algorithms.h"
 #include "DataStructures.h"
 #include "Maths.h"
 #include "Matrix.h"
 #include "Vector.h"
-
-#include <math.h>
-#include <algorithm>
 
 int main()
 {
@@ -48,6 +47,9 @@ int main()
     testMatrix.Data[2][0] = 7;
     testMatrix.Data[2][1] = 8;
     testMatrix.Data[2][2] = 9;
+    
+    float cry = testMatrix.Determinate();
+    std::cout << cry << "\n";
 
     Matrix testMatrix2;
     testMatrix2.Data[0][0] = 9;
@@ -91,9 +93,17 @@ int main()
     {
         std::cout << selected[i] << " ";
     }
+    std::cout<<"\n";
 
+    //Testing Queues/Stacks
+    DataStructures::Queue<int> queue;
+    queue.Push(10);
+    int testing = queue.Peek();
+    std::cout<<testing;
+
+    //Testing Matrix rotate
+    Vector rotateMe(1,2,3);
+    Matrix rotational;
+    rotateMe = rotational.RotateAroundX(rotateMe, 90);
+    std::cout << rotateMe.x << " " << rotateMe.y << " " << rotateMe.z;
 }
-
-
-
-

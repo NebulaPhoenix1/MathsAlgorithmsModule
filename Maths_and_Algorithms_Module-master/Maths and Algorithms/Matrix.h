@@ -13,11 +13,12 @@ public:
 	float Determinate();
 	float Determinate2D(float a, float b, float c, float d);
 
+	//Spit out rotational matrix
 	void SetRotateAroundX(float Angle);
 	void SetRotateAroundY(float Angle);
 	void SetRotateAroundZ(float Angle);
 
-
+	//Rotate matrix using rotational matrix
 	Vector RotateAroundX(Vector Point, float Angle);
 	Vector RotateAroundY(Vector Point, float Angle);
 	Vector RotateAroundZ(Vector Point, float Angle);

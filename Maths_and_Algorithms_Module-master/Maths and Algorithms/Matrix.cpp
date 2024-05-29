@@ -1,4 +1,6 @@
 #include "Matrix.h"
+#include "Maths.h"
+#include <math.h>
 
 /* 
     A B C
@@ -29,19 +31,66 @@ float Matrix::Determinate2D(float a, float b, float c, float d)
     return ((a * d) - (b * c));
 }
 
+
+//Return rotational matrices for rotation around different axis
 void Matrix::SetRotateAroundX(float angle)
 {
-    
+    Data[0][0] = 1;
+    Data[0][0] = 0;
+    Data[0][0] = 0;
+    Data[1][0] = 0;
+    Data[1][1] = cos(MathUtils::toRad(angle));
+    Data[1][2] = -sin(MathUtils::toRad(angle));
+    Data[2][0] = 0;
+    Data[2][1] = sin(MathUtils::toRad(angle));
+    Data[2][2] = cos(MathUtils::toRad(angle));
 }
 
 void Matrix::SetRotateAroundY(float angle)
 {
-
+    Data[0][0] = cos(MathUtils::toRad(angle));
+    Data[0][0] = 0;
+    Data[0][0] = sin(MathUtils::toRad(angle));
+    Data[1][0] = 0;
+    Data[1][1] = 1;
+    Data[1][2] = 0;
+    Data[2][0] = -sin(MathUtils::toRad(angle));
+    Data[2][1] = 0;
+    Data[2][2] = cos(MathUtils::toRad(angle));
 }
 
 void Matrix::SetRotateAroundZ(float angle)
 {
-
+    Data[0][0] = cos(MathUtils::toRad(angle));
+    Data[0][0] = -sin(MathUtils::toRad(angle));
+    Data[0][0] = sin(MathUtils::toRad(angle));
+    Data[1][0] = cos(MathUtils::toRad(angle));
+    Data[1][1] = 0;
+    Data[1][2] = 0;
+    Data[2][0] = 0;
+    Data[2][1] = 0;
+    Data[2][2] = 1;
 }
 
+//Assuming angles we're given are in degrees
+//Just multiply vector by rotational matrix
+Vector RotateAroundX(Vector point, float Angle)
+{
+    Matrix rotMatrix;
+    rotMatrix.SetRotateAroundX(Angle);
+    return rotMatrix * point;
+}
 
+Vector RotateArondY(Vector point, float Angle)
+{
+    Matrix rotMatrix;
+    rotMatrix.SetRotateAroundY(Angle);
+    return rotMatrix * point;
+}
+
+Vector RotateAroundZ(Vector point, float Angle)
+{
+    Matrix rotMatrix;
+    rotMatrix.SetRotateAroundY(Angle);
+    return rotMatrix * point;
+}

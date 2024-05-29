@@ -12,9 +12,10 @@ namespace Algorithms
 	 int * SelectionSort(int* Data, size_t Size);
 	 int * HeapSort(int* Data, size_t Size);
 	 int * MergeSort(int* Data, size_t Size);
+	 int * MergeSortHelper(int* Data, size_t Size);
 	 int * QuickSort(int* Data, size_t Size);
 	 int * BinSort(int* Data, size_t Size);
-	
+
      int * LinearSearch(int* Data, size_t Size, int target);
      int * BinarySearch(int* Data, size_t Size, int target);
 }

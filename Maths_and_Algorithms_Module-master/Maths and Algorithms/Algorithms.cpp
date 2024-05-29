@@ -129,3 +129,27 @@ int * Algorithms::SelectionSort(int* Data, size_t size)
     }
     return Data;
 }
+
+int * Algorithms::MergeSort(int* Data, size_t size)
+{
+    //Return data if array size is 1
+    if(size <= 2)
+    {
+        //find biggest, swap them if biggest is 1st
+        //then return data
+        if(Data[0] > Data[1])
+        {
+            int temporary = Data[0];
+            Data[0] = Data[1];
+            Data[1] = temporary;
+        }
+    }
+    
+    int mid = size / 2;
+    int left[mid];
+    int right[mid];
+    //recursively call merge for left and right
+    return nullptr;
+
+    //then merge two arrays
+}
