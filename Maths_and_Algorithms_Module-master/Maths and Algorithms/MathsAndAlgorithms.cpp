@@ -104,6 +104,6 @@ int main()
     //Testing Matrix rotate
     Vector rotateMe(1,2,3);
     Matrix rotational;
-    rotateMe = rotational.RotateAroundX(rotateMe, 90);
+    rotateMe = rotational.RotateAroundX(rotateMe, 45.0f);
     std::cout << rotateMe.x << " " << rotateMe.y << " " << rotateMe.z;
 }

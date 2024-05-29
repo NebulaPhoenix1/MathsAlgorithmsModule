@@ -74,21 +74,21 @@ void Matrix::SetRotateAroundZ(float angle)
 
 //Assuming angles we're given are in degrees
 //Just multiply vector by rotational matrix
-Vector RotateAroundX(Vector point, float Angle)
+Vector Matrix::RotateAroundX(Vector point, float Angle)
 {
     Matrix rotMatrix;
     rotMatrix.SetRotateAroundX(Angle);
     return rotMatrix * point;
 }
 
-Vector RotateArondY(Vector point, float Angle)
+Vector Matrix::RotateAroundY(Vector point, float Angle)
 {
     Matrix rotMatrix;
     rotMatrix.SetRotateAroundY(Angle);
     return rotMatrix * point;
 }
 
-Vector RotateAroundZ(Vector point, float Angle)
+Vector Matrix::RotateAroundZ(Vector point, float Angle)
 {
     Matrix rotMatrix;
     rotMatrix.SetRotateAroundY(Angle);
