@@ -248,3 +248,52 @@ int Algorithms::split(int *Data, int lowIndex, int highIndex)
     return lowIndex;
 }
 
+int* Algorithms::BinSort(int* Data, size_t size)
+{
+    int largest = FindLargestVal(Data, size);
+    const int numBuckets = 10;
+    int interval = (largest + 1) / numBuckets; //Value to determine range of numbers which go into each bucket
+    int buckets[numBuckets][size]; //2D array to for buckets
+    int bucketAmount[numBuckets]; //Array to hold how many values are in each bucket
+
+    //Set bucket amount for each bucket to zero
+    for(int i = 0; i < numBuckets; i++)
+    {
+        bucketAmount[i] = 0;
+    }
+
+    //For loop which goes through Data, calculates which bucket it needs to go into
+    //Adds value to buckets 2d Array at in the correct index abd increment bucketAmount index so we know which buckets have values added to 
+    for(int i = 0; i < size; i++)
+    {
+        int bucketIndex = Data[i] / interval;
+        buckets[bucketIndex][bucketAmount[bucketIndex]++] = Data[i];
+    }
+    //Go through each bucket, sorting them and appending them to new sorted array
+    int dataIndex = 0; //Index of original data we're checking
+    for(int i = 0; i < numBuckets; i++)
+    {
+        int* inserted = InsesrtionSort(buckets[i], bucketAmount[i]); //Sorts ith bucket
+        //New loop to iterate through sorted bucket and append it to orginal (now sorted)
+        for(int j = 0; j < bucketAmount[i]; j++)
+        {
+            Data[dataIndex++] = inserted[j];
+        }
+    }
+    return Data;
+
+}
+
+//Function which checks every value in array to find and return largest value
+int Algorithms::FindLargestVal(int* Data, size_t size)
+{
+    int result = Data[0];
+    for(int i = 0; i < size; i++)
+    {
+        if(Data[i] > result)
+        {
+            result = Data[i];
+        }
+    }
+    return result;
+}

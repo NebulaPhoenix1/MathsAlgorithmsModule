@@ -19,6 +19,7 @@ namespace Algorithms
 	 int split(int* Data, int lowIndex, int highIndex);
 
 	 int * BinSort(int* Data, size_t Size);
+	 int FindLargestVal(int* Data, size_t size);
 
      int * LinearSearch(int* Data, size_t Size, int target);
      int * BinarySearch(int* Data, size_t Size, int target);

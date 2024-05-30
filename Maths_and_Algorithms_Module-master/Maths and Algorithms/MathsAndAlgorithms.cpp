@@ -118,10 +118,11 @@ int main()
     //int* bubbled = Algorithms::BubbleSort(sort, 7);
     //int* selected = Algorithms::SelectionSort(sort, 7);
     //int* merged = Algorithms::MergeSort(sort, 5);
-    int * quick = Algorithms::QuickSort(sort, 7);
+    //int * quick = Algorithms::QuickSort(sort, 7);
+    int* binned = Algorithms::BinSort(sort, 7);
     for(int i = 0; i < 9; i++)
     {
-        std::cout << quick[i] << " ";
+        std::cout << binned[i] << " ";
     }
     std::cout<<"\n";
 }
